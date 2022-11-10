@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+body{
+    text-align: center;
+    margin-top: 6em;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+h1{
+    font-weight: 100;
+    color: #1089f0;
+    display: inline-block;
+    text-transform:uppercase;
+    letter-spacing: 15px;
+}
+
+.text1{
+    animation: bounce1 .5s alternate infinite ease-in;
+}
+
+.text2{
+    animation: bounce2 .5s alternate infinite ease-in;
+    font-size: 70px;
+}
+
+.text3{
+    animation: bounce3 .5s alternate infinite ease-in;
+}
+
+@keyframes bounce1{
+    0%{transform: translateX(-30%);}
+    100%{transform: translateX(5%);}
+}
+
+@keyframes bounce2{
+    0%{transform: translateY(-130%);}
+    100%{transform: translateY(0%);}
+}
+
+@keyframes bounce3{
+    0%{transform: translateX(30%);}
+    100%{transform: translateX(-10%);}
+}
